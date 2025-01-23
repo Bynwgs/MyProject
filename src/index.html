@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome To MCKL!</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="font-[Poppins] text-zinc-100 bg-gradient-to-b from-indigo-950 to-blue-900 min-h-screen text-2xl">
+  <header class="text-black bg-zinc-300 pb-1">
+    <nav class="flex justify-between items-center w-[92%] mx-auto">
+      <div>
+        <img class="w-16 opacity-45" src="/img/logo.png">
+      </div>
+      <div class="nav-links duration-500 md:static absolute bg-zinc-300 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+          <li>
+            <a class="hover:text-gray-500" href="#">About Us</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#">Facilities</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#">Programmes</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#">Clubs</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#">Achievements</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="flex items-center gap-6">
+        <button class="bg-stone-950 text-lg text-white px-5 py-2 rounded-full hover:bg-stone-800">Sign in</button>
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+    </nav>
+  </header>
+
+  <div class="flex text-5xl font-extrabold my-5 justify-center text-gray-300 decoration-2" >
+    Facilities
+  </div>
+
+  <div class="mx-10 my-6 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 min-h-screen">
+    
+    <div class="bg-transparent w-full flex flex-col">
+      <div class="relative h-64 w-full inline-block overflow-hidden -z-50 md:z-50">
+        <img src="/img/school.jpg" class="w-full h-full object-cover shadow-lg rounded-xl hover:scale-110 duration-500 transition-transform">
+      </div>
+      <div class="my-4">
+        <span class="text-xl text-slate-200 leading-6 font-bold">Main Entrance</span>
+        <span class="flex justify-start text-lg font-medium text-gray-300">The place where everyone comes and goes.</span>         
+      </div>
+    </div>
+
+    <div class="bg-transparent w-full flex flex-col">
+      <div class="relative h-64 w-full inline-block overflow-hidden -z-50 md:z-50">
+        <img src="/img/basketball.jpg" class="w-full h-full object-cover shadow-lg rounded-xl hover:scale-110 duration-500 transition-transform">
+      </div>
+      <div class="my-4">
+        <span class="text-xl text-slate-200 leading-6 font-bold">Basketball Court</span>
+        <span class="flex justify-start text-lg font-medium text-gray-300">Building teamwork and chemistry.</span>         
+      </div>
+    </div>
+
+    <div class="bg-transparent w-full flex flex-col">
+      <div class="relative h-64 w-full inline-block overflow-hidden">
+        <img src="/img/class.jpg" class="w-full h-full object-cover shadow-lg rounded-xl hover:scale-110 duration-500 transition-transform">
+      </div>
+      <div class="my-4">
+        <span class="text-xl text-slate-200 leading-6 font-bold">The Classroom</span>
+        <span class="flex justify-start text-lg font-medium text-gray-300">Newly renovated for a productive learning session.</span>         
+      </div>
+    </div>
+  
+    <div class="bg-transparent w-full flex flex-col">
+      <div class="relative h-64 w-full inline-block overflow-hidden">
+        <img src="/img/library.jpg" class="w-full h-full object-cover shadow-lg rounded-xl hover:scale-110 duration-500 transition-transform">
+      </div>
+      <div class="my-4">
+        <span class="text-xl text-slate-200 leading-6 font-bold">The Library</span>
+        <span class="flex justify-start text-lg font-medium text-gray-300">Haven to study and relax.</span>         
+      </div>
+    </div>
+
+    <div class="bg-transparent w-full flex flex-col">
+      <div class="relative h-64 w-full inline-block overflow-hidden">
+        <img src="/img/nature.jpg" class="w-full h-full object-cover shadow-lg rounded-xl hover:scale-110 duration-500 transition-transform">
+      </div>
+      <div class="my-4">        
+        <span class="text-xl text-slate-200 leading-6 font-bold">The Walkway</span>
+        <span class="flex justify-start text-lg font-medium text-gray-300">Astonishing scenery surrounded by nature.</span>         
+      </div>
+    </div>
+  
+    
+    <div class="bg-transparent w-full flex flex-col">
+      <div class="relative h-64 w-full inline-block overflow-hidden">
+        <img src="/img/agora.jpg" class="w-full h-full object-cover shadow-lg rounded-xl hover:scale-110 duration-500 transition-transform">
+      </div>
+      <div class="my-4">        
+        <span class="text-xl text-slate-200 leading-6 font-bold">Agora</span>
+        <span class="flex justify-start text-lg font-medium text-gray-300">The bridge connecting students and lecturers.</span>         
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[9%]')
+    }
+  </script>
+</body>
+</html>
